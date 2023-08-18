@@ -13,7 +13,7 @@ export const getPosts = async (req, res) => {
 
 export const createPost = async (req, res) => {
     try {
-        const { title, description, price } = req.body
+        const { title, description,/*  price */ } = req.body
         let image;
 
         if(req.files?.image) {
@@ -25,7 +25,7 @@ export const createPost = async (req, res) => {
             }            
         }
 
-        const newPost = new Post({ title, description, price, image })
+        const newPost = new Post({ title, description,/*  price, */ image })
 
         await newPost.save()
 

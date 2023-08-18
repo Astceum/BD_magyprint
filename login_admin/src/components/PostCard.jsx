@@ -43,7 +43,7 @@ export function PostCard({ post }) {
             Eliminar
           </button>
         </div>
-        <p>$ {post.price}</p>
+        {/* <p>$ {post.price}</p> */}
         <p>{post.description}</p>
         
       </div>

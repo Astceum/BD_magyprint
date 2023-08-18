@@ -12,7 +12,7 @@ function PostPage() {
   const [post, setPost] = useState({
     title: "",
     description: "",
-    price: "",
+    /* price: "", */
     image: null,
   });
 
@@ -40,7 +40,7 @@ function PostPage() {
           validationSchema={Yup.object({
             title: Yup.string().required("El Titulo es Requerido"),
             description: Yup.string().required("La Descripción es Requerida"),
-            price: Yup.string(),
+            /* price: Yup.string(), */
           })}
           onSubmit={async (values, actions) => {
             if (params.id) {
